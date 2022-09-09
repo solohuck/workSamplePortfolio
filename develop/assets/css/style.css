@@ -49,17 +49,22 @@ header ul li a
     padding: 6px 15px;
     color: #ffffff;
     border-radius: 20px;
+    transition: font-size 2s 1s;
 }
 header ul li a:hover
 {
     background: #ffffff;
     color: rgb(0, 0, 0);
+    font-size: 36px;
 }
 .content
 {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
 }
 .layout
 {
@@ -71,6 +76,14 @@ header ul li a:hover
     border-style: solid;
     border-width: thick;
     color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.layout:hover
+{
+    box-shadow: inset 0px 0px 8px
+    rgb(255, 255, 255), 0 0 15px
+    rgb(255, 255, 255);
 }
 .float
 {
@@ -79,6 +92,15 @@ header ul li a:hover
 }
 h2
 {
-    margin-bottom: 100px;
+    margin-bottom: 100%;
     font-size: 36px;
+}
+.target
+{
+  font-size: 14px;
+  transition: font-size 1s 0s;
+}
+.target:hover
+{
+    font-size: 20px;
 }
