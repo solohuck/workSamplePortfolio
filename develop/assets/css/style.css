@@ -1,0 +1,92 @@
+/*universal selector*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*adds a background color to the <body> element*/
+body {
+    background-color: #ffffff;
+}
+
+/*adds the following properties to the <header> element*/
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*adds the following properties to the <h1> element inside of the <header> element*/
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/*adds the following properties to the <div> element*/
+header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/*only the following adds properties to the <ul> element*/
+header div ul {
+    list-style-type: none;
+}
+
+/*only the following adds properties to the <li> element*/
+header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*adds the following properties to the <a> element*/
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.banner{
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/banner2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text{
+    position: absolute;
+    color: #000000;
+    font-size: 40px;
+}
+
+h3 {
+    position: absolute;
+    font-size: 50px;
+
+}
+
+.layout {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #070707;
+}
+/* adds a line to the side of the text 
+.vertical-line {
+    border-right: 5px solid black;
+    height: 200px;
+    position: absolute;
+    margin-right: 1200px;
+    padding-left: 80px;
+    margin-top: 30px;
+    border-top: 10px;
+    padding-right: 10px;
+}
+
