@@ -5,42 +5,38 @@
     padding: 0;
     margin: 0;
 }
-body 
+body
 {
     background: linear-gradient(gray, black);
     min-height: 100vh;
 }
-header 
+header
 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 30px 100px;
+    height: 120px;
     display: flex;
+    padding: 30px 100px;                       
     justify-content: space-between;
     align-items: center;
-    color: #ffffff;
     background-color: black;
 }
-header .logo 
+header h1
 {
-    color: #ffffff;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 2px;
     font-weight: 700;
     text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
-header ul
+header ul 
 {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 header ul li
 {
-   list-style: none;
+    list-style: none;
    margin-left: 20px; 
 }
 header ul li a
@@ -57,44 +53,6 @@ header ul li a:hover
     color: rgb(0, 0, 0);
     font-size: 36px;
 }
-.content
-{
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-}
-.layout
-{
-    margin-top: 150px;
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-style: solid;
-    border-width: thick;
-    color: #ffffff;
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-}
-.layout:hover
-{
-    box-shadow: inset 0px 0px 8px
-    rgb(255, 255, 255), 0 0 15px
-    rgb(255, 255, 255);
-}
-.float
-{
-    float: left;
-    margin-right: 25px;
-}
-h2
-{
-    margin-bottom: 100%;
-    font-size: 36px;
-}
 .target
 {
   font-size: 14px;
@@ -103,4 +61,28 @@ h2
 .target:hover
 {
     font-size: 20px;
+}
+.Me
+{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/solo.JPG");
+    background-size: contain;
+    background-position: center;
+}
+.layout
+{
+    width: 80%;
+    margin: 40px auto;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 5px 10px #000000;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.layout:hover
+{
+    box-shadow: inset 0px 0px 8px
+    rgb(255, 255, 255), 0 0 15px
+    rgb(255, 255, 255);
 }
