@@ -7,18 +7,19 @@
 }
 body
 {
-    background: linear-gradient(gray, black);
+    background: linear-gradient(rgb(75, 11, 158), rgb(96, 70, 139));
     min-height: 100vh;
 }
 header
 {
     width: 100%;
-    height: 120px;
+    height: 80px;
     display: flex;
     padding: 30px 100px;                       
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header h1
 {
@@ -38,6 +39,7 @@ header ul li
 {
     list-style: none;
    margin-left: 20px; 
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header ul li a
 {
@@ -67,22 +69,204 @@ header ul li a:hover
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/solo.JPG");
-    background-size: contain;
+    background-image: url("../images/banner4.webp");
+    background-size: fill;
     background-position: center;
 }
 .layout
 {
-    width: 80%;
-    margin: 40px auto;
-    border: 5px solid rgb(255, 255, 255);
-    box-shadow: 5px 10px #000000;
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
+    width: 1000px;
+    margin: 50px auto;
+    max-width: 1200PX;
+    border-color: black;
 }
-.layout:hover
+.layout2
+{
+    width: 1000px;
+    margin: 70px auto;
+    max-width: 1200PX;
+    border-left: 3px solid black;
+}
+.layout2 h2
+{
+    color: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: upright;  
+    text-align: left;
+    font-size: 50px;
+    padding-right: 870px;
+    position: absolute;
+}
+.layout3
+{
+    width: 1000px;
+    margin: 50px auto;
+    max-width: 1200PX;
+    color: #ffffff;
+    word-break:break-all;
+    border-style: dashed;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.layout3 h2
+{
+    font-size: 30px;
+    margin: 20px;
+    color: black;
+    cursor: pointer;
+}
+a img
+{
+    display: none;
+}
+a:hover img
+{
+    display:block;
+    height: 30%;
+    width: 15%;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: black;
+}
+.wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+.wrapper2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.parent
+{
+    width:40%;
+    height: 150px;
+    margin: 30px;
+    border: 3px solid black;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+}
+.parent-zero
+{
+    width: 80%;
+    height: 400px;
+    margin-right: 0px;
+    border: 3px solid black;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+}
+.child
+{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.bg-zero {background-image: url("../images/propic5.jpg");}
+.bg-one {background-image: url("../images/programpic.jpg");}
+.bg-two {background-image: url("../images/propic2.jpg");}
+.bg-three {background-image: url("../images/propic3.jpg");}
+.bg-four {background-image: url("../images/propic4.jpg");}
+
+.a
+{
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+}
+.parent:hover, .parent-zero:hover
 {
     box-shadow: inset 0px 0px 8px
     rgb(255, 255, 255), 0 0 15px
     rgb(255, 255, 255);
+}
+.parent:hover .child, 
+.parent-zero:hover .child, 
+.parent:focus .child, 
+.parent-zero:focus .child 
+{
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.parent:hover .child:before, 
+.parent:focus .child:before, 
+.parent-zero:hover .child:before, 
+.parent-zero:focus .child:before
+{
+    display: block;
+}
+.parent:hover .a, 
+.parent:focus .a, 
+.parent-zero:hover .a, 
+.parent-zero:focus .a 
+{
+    display: block;
+}
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.layout4
+{
+    width: 1000px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 70px auto;
+}
+.layout4 h2
+{
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+.layout4 ul li
+{
+    list-style: none;
+    text-decoration: 2px underline ;
+    display: inline-block;
+    margin: 20px 30px 5px 30px;
+    cursor: pointer;
+    color: black;
+}
+.layout4 ul li:hover
+{
+    color: rgb(255, 255, 255);
 }
