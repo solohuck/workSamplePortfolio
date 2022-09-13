@@ -75,16 +75,16 @@ header ul li a:hover
 }
 .layout
 {
-    width: 1000px;
+    width: 100%;
     margin: 50px auto;
-    max-width: 1200PX;
+    max-width: 1000PX;
     border-color: black;
 }
 .layout2
 {
-    width: 1000px;
+    width: 100%;
     margin: 70px auto;
-    max-width: 1200PX;
+    max-width: 1000PX;
     border-left: 3px solid black;
 }
 .layout2 h2
@@ -96,12 +96,14 @@ header ul li a:hover
     font-size: 50px;
     padding-right: 870px;
     position: absolute;
+    max-width: 1000px;
+    width: 100%;
 }
 .layout3
 {
-    width: 1000px;
+    width: 100%;
     margin: 50px auto;
-    max-width: 1200PX;
+    max-width: 1000PX;
     color: #ffffff;
     word-break:break-all;
     border-style: dashed;
@@ -118,6 +120,12 @@ header ul li a:hover
     margin: 20px;
     color: black;
     cursor: pointer;
+}
+.layout3 h2 span
+{
+    font-size: 15px;
+    padding-left: 10px;
+    color: gray;
 }
 a img
 {
@@ -200,6 +208,11 @@ a:hover img
     height: 50px;
     cursor: pointer;
 }
+.a a
+{
+    color: #ffffff !important;
+    text-decoration: none;
+}
 .parent:hover, .parent-zero:hover
 {
     box-shadow: inset 0px 0px 8px
@@ -243,7 +256,8 @@ a:hover img
 }
 .layout4
 {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
@@ -257,16 +271,30 @@ a:hover img
     color: black;
     text-decoration: none;
 }
-.layout4 ul li
+.layout4 ul li 
 {
     list-style: none;
-    text-decoration: 2px underline ;
     display: inline-block;
     margin: 20px 30px 5px 30px;
     cursor: pointer;
     color: black;
 }
-.layout4 ul li:hover
+.layout4 ul li a
+{
+    cursor: pointer;
+    color: black;
+}
+.layout4 ul li a:hover
 {
     color: rgb(255, 255, 255);
+}
+@media screen and (max-width:1000px)
+{
+    .layout{width: 80%;}
+    .layout2{width: 80%;}
+    .layout3{width: 80%;}
+    .layout4{width: 100%;}
+    header{width: 100%;align-items: center;}
+    .Me{width: 100%;align-items: center;}
+    .layout2 h2{display: none;}
 }
